@@ -5,8 +5,11 @@ import airbnb_scrap
 
 app = Flask(__name__)
 
-client = pymongo.MongoClient("mongodb://localhost:27017/airbnb_app") 
-db = client.airbnb_app
+CONNECTION_STRING = "mongodb+srv://emma:emma@flask-mongodb-atlas.pqqfg.mongodb.net/<dbname>?retryWrites=true&w=majority"
+client = pymongo.MongoClient(CONNECTION_STRING)
+db = client.get_database('airbnb')
+user_collection = pymongo.collection.Collection(db, 'airbnb')
+
 
 @app.route("/")
 
@@ -73,4 +76,4 @@ def den():
     return render_template("den.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=8000)

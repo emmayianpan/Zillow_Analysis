@@ -11,9 +11,13 @@ Project Team:
 
 ## Metro Areas
 New York, NY
+
 Los Angeles-Long Beach-Anaheim, CA
+
 Chicago, IL
+
 Dallas-Fort Worth, TX
+
 Houston, TX
 
 ## Software

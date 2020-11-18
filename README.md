@@ -1,38 +1,23 @@
-# Project 2 - Airbnb Analysis
+# Final Project - Zillow Analysis 
 
-The goal for this project is to create an interative webpage for people who are interested in either staying or investing on Airbnb in chosen ten cities in the United States.
-The website provides the insights and visulizations by using [Inside Airbnb data](http://insideairbnb.com/).  
+The goal for this project is to train machine learning models to predict All Homes For-Sale Inventory and Median Sale Price in Top 5 Metro Areas in the United States for future buyers and real estate professionals evaluating the market.
+The website provides the insights and visulizations by using [Zillow Housing Data](https://www.zillow.com/research/data/).
+
+Website: https://zillow-metro-analysis.herokuapp.com/
 
 Project Team:
 * Radhi Patel
 * Yi An Pan (Emma) 
 
-## Cities
-
-San Francisco, California, United States (sf)
-
-New York City, New York, United States (nyc)
-
-Los Angeles, California, United States(la)
-
-Jersey City, New Jersey, United States (jc)
-
-Austin, Texas, United States (atx)
-
-Boston, Massachusetts, United States (bos)
-
-Nashville, Tennessee, United States (nsh)
-
-Chicago, Illinois, United States (chi)
-
-Columbus, Ohio, United States (colo)
-
-Denver, Colorado, United States (den)
+## Metro Areas
+New York, NY
+Los Angeles-Long Beach-Anaheim, CA
+Chicago, IL
+Dallas-Fort Worth, TX
+Houston, TX
 
 ## Software
-1. Python (Pandas, SQLAlchemy, Requests, BeautifulSoup, PyMongo, Flask) 
-2. PostgresSQL
-3. MongoDB
+1. Python (Pandas, Flask, Matplotlib, Machine Learning) 
 4. HTML
 5. CSS (Bootstrap) 
-6. Javascript (Leaflet, Plotly, D3, Chart) 
+6. Javascript (Plotly, Chart) 

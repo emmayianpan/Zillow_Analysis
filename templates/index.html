@@ -31,8 +31,8 @@
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!--Airbnb Logo-->
-    <img src="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-Logo.png" height="100" width="100"
+    <!--Zillow Logo-->
+    <img src="https://zillow.mediaroom.com/download/Zillow_Wordmark_Blue_RGB+lrg.png" height="100" width="100"
       class="navbar-brand">
 
     <!--Menu-->
@@ -41,128 +41,94 @@
       <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
       </li>
-      <!--Analytics-->
-      <li class="nav-item">
-        <a class="nav-link" href="/analytics">Analytics</a>
-      </li>
       <!--Dropdown-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          City
+          Metro Areas
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="/bos">Boston, Massachusetts</a>
-          <a class="dropdown-item" href="/bc">Broward County, Florida</a>
-          <a class="dropdown-item" href="/chi">Chicago, Illinois</a>
-          <a class="dropdown-item" href="/colo">Columbus, Ohio</a>
-          <a class="dropdown-item" href="/den">Denver, Colorado</a>
-          <a class="dropdown-item" href="/hi">Hawaii, Hawaii</a>
-          <a class="dropdown-item" href="/la">Los Angeles, California</a>
-          <a class="dropdown-item" href="/nsh">Nashville, Tennessee</a>
-          <a class="dropdown-item" href="/nyc">New York City, New York</a>
-          <a class="dropdown-item" href="/sf">San Francisco, California</a>
+          <a class="dropdown-item" href="/ny">New York</a>
+          <a class="dropdown-item" href="/la">Los Angeles</a>
+          <a class="dropdown-item" href="/chi">Chicago</a>
+          <a class="dropdown-item" href="/dtx">Dallas</a>
+          <a class="dropdown-item" href="/hou">Houston</a>
         </div>
       </li>
-
-      <!--About and Resources-->
-      <div class="container-fluid">
-        <a href="#demo" class="btn btn-primary" data-toggle="collapse">About</a>
-        <div id="demo" class="collapse">
-          <p style="color: white;">
-            The goal for this project is to create an interative webpage for people who are interested in
-            either staying or investing on Airbnb in chosen ten cities in the United States.
-            The website provides the insights and visulizations by using
-            <a href="http://insideairbnb.com/get-the-data.html" class="text-white"><b>Inside Airbnb</b></a>.
-          </p>
-          <p style="color: white;">
-            Project Team: Radhi Patel, Yi An Pan (Emma)</p>
-        </div>
-        <a href="#demo" class="btn btn-primary" data-toggle="collapse">Resources</a>
-        <div id="demo" class="collapse">
-          <li><a href="http://insideairbnb.com/get-the-data.html" class="text-white">Inside Airbnb</a></li>
-          <li><a href="https://www.wikipedia.org/" class="text-white">Wikipedia</a></li>
-          <li><a href="https://www.planetware.com/" class="text-white">Planet Ware</a></li>
-          <li><a href="https://news.airbnb.com/" class="text-white">Airbnb Newsroom</a></li>
-          <li><a href="https://www.bbc.com/news" class="text-white">BBC News</a></li>
-          <li><a href="https://abcnews.go.com/" class="text-white">ABC News</a></li>
-          <li><a href="https://barrie360.com/wp-content/uploads/2020/02/airbnb-3399753_1920.jpg"
-              class="text-white">Homepage Image</a></li>
-          <li><a href="https://1000logos.net/wp-content/uploads/2017/08/Airbnb-Logo.png" class="text-white">Airbnb
-              Logo</a></li>
-        </div>
-      </div>
 
     </ul>
   </nav>
   <!--format for every html ended from here-->
 
-  <header class="images">
-    <img src="https://barrie360.com/wp-content/uploads/2020/02/airbnb-3399753_1920.jpg"
-      style="width: 1260px; height: 400px;">
-  </header>
-  <div class="container-fluid">
-    <!--Home page thumbnail-->
-    <h1><b>Airbnb Updated News</b></h1>
-
-    <div class="album py-5 bg-light">
-      <div class="row">
-
-        <!--Airbnb News-->
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="{{airbnb.airbnb_img | default('static/images/error.png', true)}}" class="img-responsive" alt=""
-              height="300" width="400">
-            <div class="card-body">
-              <h3 class="card-text"><b>{{airbnb['airbnb_headline']}}</b></h3>
-              <p class="card-text">{{airbnb['airbnb_summary']}}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="/scrape" type="button" class="btn btn-sm btn-outline-secondary">Update</a>
-                  <a href="{{airbnb.airbnb_link}}" type="button" class="btn btn-sm btn-outline-secondary">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--BBC News-->
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="{{airbnb.bbc_img | default('static/images/error.png', true)}}" class="img-responsive" alt=""
-              height="300" width="400">
-            <div class="card-body">
-              <h3 class="card-text"><b>{{airbnb['bbc_headline']}}</b></h3>
-              <p class="card-text">{{airbnb['bbc_summary']}}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="/scrape" type="button" class="btn btn-sm btn-outline-secondary">Update</a>
-                  <a href="{{airbnb.bbc_link | default('static/images/error.png', true)}}" type="button"
-                    class="btn btn-sm btn-outline-secondary">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--ABC News-->
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="https://deadline.com/wp-content/uploads/2019/09/abc-news-logo-featured.jpg" class="img-responsive"
-              alt="" height="300" width="400">
-            <div class="card-body">
-              <h3 class="card-text"><b>{{airbnb['abc_headline']}}</h3>
-              <p class="card-text">{{airbnb['abc_summary']}}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="/scrape" type="button" class="btn btn-sm btn-outline-secondary">Update</a>
-                  <a href="{{airbnb.abc_link}}" type="button" class="btn btn-sm btn-outline-secondary">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div class="container">
+    <h3><b>The project</b></h3>
+    <p>The goal for this project is to train machine learning models to predict All Homes <b>For-Sale Inventory</b> and
+      <b>Median
+        Sale Price</b> in Top 5 Metro Areas in the United States for future buyers and real estate professionals
+      evaluating
+      the market.</p>
+    <h3><b>Dataset</b></h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="wrapper">
+          <canvas id="plot-metro"></canvas>
         </div>
       </div>
+      <div class="col-md-6">
+        <p>According to <a
+            href="https://www.statista.com/statistics/183600/population-of-metropolitan-areas-in-the-us/">Statista</a>,
+          The metropolitan area of New York-Newark-Jersey City had the biggest population in 2019. Based on annual
+          estimates from the 2010 census, the metropolitan area had around 19.2 million inhabitants, which was a slight
+          decrease on the previous year. The Los Angeles and Chicago metro areas rounded out the top three. </p>
+        <p>The project used For-Sale Inventory and Median Sale Price data of
+          "Top 5 Population of the largest metropolitan areas in the U.S. as of 2019"
+          as the dataset to conclude the market trend for each metro areas in the United States. </p>
+      </div>
     </div>
+    <h3><b>Process</b></h3>
+    <ul>
+      <li>Pull data from <a href="https://www.zillow.com/research/data/"><b>Zillow Housing Data</b></a></li>
+      <li>Process the data by using <b>Python Pandas</b></li>
+      <li>Create a number of machine learning statsmodels including <ul>
+          <li>ARIMA</li>
+          <li>Moving Average</li>
+          <li>Naïve</li>
+          <li>Simple Exponential Smoothing</li>
+          <li>Holt Winter (Additive)</li>
+        </ul>to predict current For-Sale Inventory and Median Sale Price and
+        to visualize the results by using <b>Python Matplotlib</b></li>
+      <li>Define the model - <b>Simple Exponential Smoothing</b> for this project and forecast future trend</li>
+      <li>Visualize the actual/forecast data by using <b>Plotly.js and Chart.js</b></li>
+      <li>Present and Publish on the website by using <b>HTML/CSS, Flask and Heroku</b></li>
+    </ul>
+
+    <h3><b>Conclusion</b></h3>
+    <p>The real estate market for these five metro areas is significantly affected by COVID-19 situation in 2020,
+      that the For-Sale Inventory is much lower than historical data. Therefore, we used Simple Exponential Smoothing
+      model (which also has lowest RMSE in average after testing) to predict future trend as the prediction is a
+      weighted sum of past observations, but the model explicitly
+      uses an exponentially decreasing weight for past observations without using its historical trend and seasonality.
+
+    </p>
+
+    <h3><b>About Us</b></h3>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/emmayianpan/">Yi An Pan (Emma)</a></li>
+      <li>Radhi Patel</li>
+    </ul>
+
+    <h3><b>Resources</b></h3>
+    <ul>
+      <li><a href="https://www.zillow.com/research/data/">Zillow</a></li>
+      <li><a href="https://www.statista.com/statistics/183600/population-of-metropolitan-areas-in-the-us/">Statista</a>
+      </li>
+      <li><a href="https://zillow.mediaroom.com/download/Zillow_Wordmark_Blue_RGB+lrg.png">Zillow Logo</a></li>
+    </ul>
+
+    <h3><b>GitHub Repo</b></h3>
+    <ul>
+      <li><a href="https://github.com/emmayianpan/Zillow_Analysis.git">Zillow_Analysis</a></li>
+    </ul>
+    <br>
   </div>
 
   <!--format for every html started from here-->
@@ -207,19 +173,12 @@
     src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
 
   <!--Our JS-->
-  <script type="text/javascript" src="../static/js/analytics.js"></script>
-  <script type="text/javascript" src="../static/js/config.js"></script>
-  <script type="text/javascript" src="../static/js/sf.js"></script>
-  <script type="text/javascript" src="../static/js/nyc.js"></script>
+  <script type="text/javascript" src="../static/js/ny.js"></script>
   <script type="text/javascript" src="../static/js/la.js"></script>
-  <script type="text/javascript" src="../static/js/hi.js"></script>
-  <script type="text/javascript" src="../static/js/bc.js"></script>
-  <script type="text/javascript" src="../static/js/bos.js"></script>
-  <script type="text/javascript" src="../static/js/nsh.js"></script>
+  <script type="text/javascript" src="../static/js/hou.js"></script>
+  <script type="text/javascript" src="../static/js/dtx.js"></script>
   <script type="text/javascript" src="../static/js/chi.js"></script>
-  <script type="text/javascript" src="../static/js/colo.js"></script>
-  <script type="text/javascript" src="../static/js/den.js"></script>
-
+  <script type="text/javascript" src="../static/js/metro.js"></script>
 </body>
 
 </html>

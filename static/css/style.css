@@ -4,68 +4,6 @@
   background-color: none;
 }
 
-/*style for map*/
-#map-sf,
-body,
-html {
-  height: 100%;
-}
-
-#map-nyc,
-body,
-html {
-  height: 100%;
-}
-
-#map-hi,
-body,
-html {
-  height: 100%;
-}
-
-#map-bos,
-body,
-html {
-  height: 100%;
-}
-
-#map-chi,
-body,
-html {
-  height: 100%;
-}
-
-#map-colo,
-body,
-html {
-  height: 100%;
-}
-
-#map-den,
-body,
-html {
-  height: 100%;
-}
-
-#map-bc,
-body,
-html {
-  height: 100%;
-}
-
-#map-la,
-body,
-html {
-  height: 100%;
-}
-
-#map-nsh,
-body,
-html {
-  height: 100%;
-}
-
-/*style for analytics.html 'plot' */
 #wrapper {
   height: 300px;
 }
@@ -74,7 +12,7 @@ html {
 h1{
   line-height: 100px;
   text-align: center;
-  color:#FF5A5F;
+  color:#5477BB;
   font-family: verdana;
   font-size: 300%;
 }
@@ -91,26 +29,4 @@ p {
 .center {
   text-align: center;
   list-style-position: inside;
-}
-
-/*Style for D3 Bar Chart*/
-.bar {
-  fill:#ef8c68;
-}
-
-.bar:hover {
-  fill:#F7C45F;
-}
-
-.tooltip {
-  position: absolute;
-  width: 90px;
-  height: 100px;
-  padding: 10px;
-  font: 12px sans-serif;
-  text-align: center;
-  color: white;
-  background: rgb(90, 90, 175);
-  border: 0;
-  border-radius: 10px;
 }

@@ -1,7 +1,6 @@
-
 // Default plot
 function init() {
-    d3.csv("../static/data/chi.csv").then(function (Data) {
+    d3.csv("../static/data/dtx.csv").then(function (Data) {
         var date = Data.map(function (d) {
             return d.date;
         });
@@ -81,9 +80,9 @@ d3.selectAll("body").on("change", updatePlotly);
 
 //Dropdown Menu Updated Plot
 function updatePlotly() {
-    d3.csv("../static/data/chi.csv").then(function (Data) {
+    d3.csv("../static/data/dtx.csv").then(function (Data) {
         var dropdownMenu = d3.select("#selDataset");
-        var dataset = dropdownMenu.node().value;
+        var dataset= dropdownMenu.node().value;
         var CHART = d3.selectAll("#plot").node();
         var data_x = [];
 

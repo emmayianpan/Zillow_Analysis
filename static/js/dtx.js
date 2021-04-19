@@ -61,13 +61,14 @@ function init() {
             yaxis: {
                 autorange: true
             },
-            legend: {
-                y: 0.5,
-                traceorder: 'reversed',
-                font: {
-                    size: 16
-                }
-            }
+            // legend: {
+            //     y: 0.5,
+            //     traceorder: 'reversed',
+            //     font: {
+            //         size: 16
+            //     }
+            // }
+            showlegend: false
         };
         var data_x = [trace1, trace2, trace3];
         var CHART = d3.selectAll("#plot").node();
@@ -149,13 +150,14 @@ function updatePlotly() {
                     yaxis: {
                         autorange: true
                     },
-                    legend: {
-                        y: 0.5,
-                        traceorder: 'reversed',
-                        font: {
-                            size: 16
-                        }
-                    }
+                    // legend: {
+                    //     y: 0.5,
+                    //     traceorder: 'reversed',
+                    //     font: {
+                    //         size: 16
+                    //     }
+                    // }
+                    showlegend: false
                 };
                 Plotly.newPlot(CHART, data_x, layout_x);
 
@@ -223,13 +225,14 @@ function updatePlotly() {
                     yaxis: {
                         autorange: true
                     },
-                    legend: {
-                        y: 0.5,
-                        traceorder: 'reversed',
-                        font: {
-                            size: 16
-                        }
-                    }
+                    // legend: {
+                    //     y: 0.5,
+                    //     traceorder: 'reversed',
+                    //     font: {
+                    //         size: 16
+                    //     }
+                    // }
+                    showlegend: false
                 };
                 Plotly.newPlot(CHART, data_x, layout_y);
                 break;

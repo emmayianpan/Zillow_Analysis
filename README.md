@@ -5,10 +5,6 @@ The website provides the insights and visulizations by using [Zillow Housing Dat
 
 Website: https://zillow-metro-analysis.herokuapp.com/
 
-Project Team:
-* Radhi Patel
-* Yi An Pan (Emma) 
-
 ## Metro Areas
 New York, NY
 

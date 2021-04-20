@@ -24,22 +24,24 @@
   ```  
 ## Built With
 * [Python Pandas](https://pandas.pydata.org/) 
-* [Python SQLAlchemy](https://www.sqlalchemy.org/) 
-* [PostgreSQL](https://www.postgresql.org/) 
+* [Python Matplotlib](https://matplotlib.org/) 
+* [Python Machine Learning - statsmodels](https://www.statsmodels.org/stable/index.html)
 * [JavaScript Plotly](https://plotly.com/javascript/) 
-* [JavaScript Leaflet](https://leafletjs.com/)
+* [JavaScript Chart](https://www.chartjs.org/)
 * [HTML](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/)
+* [Bootstrap](https://getbootstrap.com/)
 * [Python Flask](https://flask.palletsprojects.com/en/1.1.x/) 
 * [Heroku](https://www.heroku.com/)
 
 ## Data Sources
-* [Taiwan Hotels Database](https://taiwanstay.net.tw/) - The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files.
+* [Zillow Housing Data](https://www.zillow.com/research/data/)
+* [Statista - Population of the Largest Metropolitan Areas in the U.S.](https://www.statista.com/statistics/183600/population-of-metropolitan-areas-in-the-us/)
 
-## ETL Process
-* Pull raw data from [Taiwan Hotels Database](https://taiwanstay.net.tw/) and downloaded reports as ODF files. Organized raw data for the first step.
-* Transfered into csv files, cleaned/sorted data with correct formatting and created new columns by calculation including RevPAR, Demand, etc. to complete data processing.
-* Loaded data onto PostgreSQL and merged monthly data.
+## Project Details
+* Pull data from [Zillow Housing Data](https://www.zillow.com/research/data/). 
+* Process the data by using Python Pandas
+* Create a number of machine learning statsmodels including <ins>ARIMA</ins>, Moving Average, Naïve, Simple Exponential Smoothing and Holt Winter (Additive) 
 * Created another dataset for area performance by using combined data to calculate on Jupyter Notebook. 
 * Manually input data "Hotle English Name", "Address", "Longtitude", "Latitude" and "Website" from Google for Hotel Map.
 * Exported all data into csv files while the ETL processing was completed.

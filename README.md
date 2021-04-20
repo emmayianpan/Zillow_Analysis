@@ -15,7 +15,7 @@
   <img src="static/image/screenshot.JPG" alt="Webpage Screenshot" width="900" height="450">
 </a>
 <br>
-<strong><i> The goal for this project is to train machine learning models to predict All Homes For-Sale Inventory and Median Sale Price in Top 5 Metro Areas in the United States for future buyers and real estate professionals evaluating the market. </i></strong>
+<strong><i> The goal of this project is to train machine learning models to predict All Homes For-Sale Inventory and Median Sale Price in Top 5 Metro Areas in the United States for future buyers and real estate professionals evaluating the market. </i></strong>
 
 ## Prerequisites 
 * Getting Started 

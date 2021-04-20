@@ -16,6 +16,7 @@
 </a>
 <br>
 <strong><i> The goal of this project is to train machine learning models to predict All Homes For-Sale Inventory and Median Sale Price in Top 5 Metro Areas in the United States for future buyers and real estate professionals evaluating the market.</i></strong>
+<br>
 <strong><i>The website provides the insights and visulizations by using Zillow Housing Data.</i></strong>
 
 ## Prerequisites 

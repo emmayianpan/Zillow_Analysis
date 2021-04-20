@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://zillow-metro-analysis.herokuapp.com/">
-    <img src="housing.png" alt="Logo" width="80" height="80">
+    <img src="static/image/housing.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Housing Analysis and Forecasting in Top 5 Metro Areas in the U.S.</h3>
   <p align="center">
@@ -11,22 +11,17 @@
 </p>
 
 ## About The Project
-<a href="https://taiwan-hotel.herokuapp.com/">
+<a href="https://zillow-metro-analysis.herokuapp.com/">
   <img src="static/image/screenshot.JPG" alt="Webpage Screenshot" width="900" height="450">
 </a>
 <br>
-<strong><i> The website is to analyze Taiwan hotel market and to visualize data on a monthly basis for hoteliers to review competitors performance, pricing, and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry. </i></strong>
+<strong><i> The goal for this project is to train machine learning models to predict All Homes For-Sale Inventory and Median Sale Price in Top 5 Metro Areas in the United States for future buyers and real estate professionals evaluating the market. </i></strong>
 
 ## Prerequisites 
 * Getting Started 
   ```
-  git clone https://github.com/emmayianpan/Taiwan_Hotel.git
-  ```
-* Get [API Key at Mapbox](https://docs.mapbox.com/api/overview/) and input the token into static/js/map.js 
-  ```
-  accessToken: "YOUR API KEY"
-  ```
-  
+  git clone https://github.com/emmayianpan/Zillow_Analysis.git
+  ```  
 ## Built With
 * [Python Pandas](https://pandas.pydata.org/) 
 * [Python SQLAlchemy](https://www.sqlalchemy.org/) 
